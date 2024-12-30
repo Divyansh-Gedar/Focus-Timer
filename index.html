@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Focus Timer</h1>
+    <div class="timer">
+      <h2 id="session-label" style="text-align: center; margin-top: 10px;">Focus Time</h2>
+      <h2 id="time">25:00</h2>
+      <div id="progress-container" style="width: 100%; height: 10px; background-color: #ddd; border-radius: 5px; margin-top: 15px;">
+        <div id="progress-bar" style="width: 0%; height: 100%; background-color: #4caf50; border-radius: 5px;"></div>
+      </div>
+      
+      <div id="controls">
+        <span id="percentage" style="font-size: 1.2rem; margin-top: 10px;"></span>
+      </div>
+      
+      
+      <button id="start-btn">Start</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+    <div class="settings">
+      <label>Work Duration (mins): 
+        <input type="number" id="work-duration" value="25">
+      </label>
+      <label>Break Duration (mins): 
+        <input type="number" id="break-duration" value="5">
+      </label>
+    </div>
+    <p id="quote">"Stay focused and never give up!"</p>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>

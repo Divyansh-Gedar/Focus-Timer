@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%; /* Ensures responsiveness */
+}
+
+/* Timer Display */
+#time {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#start-btn {
+  background-color: #4CAF50;
+}
+
+#reset-btn {
+  background-color: #f44336;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* Input Fields */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Quote Display */
+#quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: black;
+  margin-top: 20px;
+}
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #ddd; /* Light gray background */
+  height: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  overflow: hidden; /* Ensures inner bar doesn't overflow */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50; /* Green color */
+  width: 0%; /* Start at 0% */
+  transition: width 0.2s ease; /* Smooth transition */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #time {
+    font-size: 2.5rem; /* Adjust timer size for smaller devices */
+  }
+
+  button {
+    font-size: 0.9rem; /* Reduce button size */
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  #time {
+    font-size: 2rem;
+  }
+
+  input[type="number"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+}
+/* Animated Background */
+body {
+  background: linear-gradient(45deg, rgba(8, 184, 8, 0.767),#be1aa9,rgb(19, 121, 134));
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
